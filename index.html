@@ -31,7 +31,7 @@
                 <li><b>Svårighetsgrad:</b> Medel</li>
             </ul>
         </nav>
-        <sidebar>
+        <div id="sidebar">
             <h4>Ingredienser:</h4>
             <ul>
                 <li>2 auberginer</li>
@@ -46,11 +46,14 @@
                 <li>Olivolja</li>
                 <li>Granatäppelkärnor</li>
             </ul>
-        </sidebar>
+        </div>
         <main>
             <h3>Såhär gör du:</h3>
             <p>Sätt ugnen på 250°C övervärme/grill. Ställ in en plåt långt ner i ugnen.</p>
             <p>Gör några snitt i varje aubergine med en kniv. Lägg auberginen på gallret i mitten av ugnen ca 30 minuter eller tills skalet är svart. Låt svalna lite.</p>
+            <div id="timerButton">
+                <p id="timeRemaining"></p>
+            </div>
             <p>Ta försiktigt bort skalet från auberginerna och lägg aubergineköttet i en skål. Mosa med en gaffel. Blanda ner tahini, vitlök, citronjuice och salt. Ställ i kylen en stund innan servering.</p>
             <p><b>Till servering:</b> Garnera med olivolja och granatäppelkärnor.</p>
         </main>
@@ -68,5 +71,7 @@
             <p>Ett recept av <a href="https://www.arla.se">Arla</a></p>
         </footer>
     </div>
+    
+    <script type="text/javascript" src="./timer.js"></script>
 </body>
 </html>
