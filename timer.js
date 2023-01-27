@@ -3,8 +3,8 @@ const timerButton = document.getElementById("timerButton");
 const timeRemaining = document.getElementById("timeRemaining")
 
 const startTimer = () => {
-    // Timer är 30 min och 60 sek
-    const timer =  10 * 1000; 
+    // Timer är 30 min
+    const timer =  30 * 60 * 1000; 
     const endTime = Date.now() + timer;
     timerButton.innerHTML = ""; 
     let minutes;
