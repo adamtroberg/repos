@@ -1,12 +1,12 @@
-.hidden {
-    display: none !important;
-}
+    .hidden {
+        display: none !important;
+    }
 
 
 .grid-box{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 2fr 5fr 6fr 0.5fr;
+    grid-template-rows: 37.8    vh 5fr 6fr 0.5fr;
     gap: 1.75vw;
 }
 
@@ -85,20 +85,10 @@ nav ul *{
     margin-top: 5vh;
 }
 
-#timerButton{
-    text-align: center;
-}
-
-#timeRemaining{
-    text-align: center;
-    background-color: white;
-    border: 1vw solid #FFDDCA;
-    border-radius: 1vw;
-    margin-inline: 5vw;
-    font-size: 2vw;
-}
-
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-column: 2/3;
     grid-row: 3/4;
     background-color: #FFFFEA;
@@ -119,6 +109,25 @@ main p{
     font-size: 1.7vw;
     padding: 2vh;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.timerButton{
+    border: 0.8vw solid #FFDDCA;
+    border-radius: 1vw;
+    background-color: #FFFFFF;
+    width: 30vw;
+    height: 10vh;
+    font-size: 20px;
+}
+
+
+#timeRemaining{
+    text-align: center;
+    background-color: white;
+    border: 1vw solid #FFDDCA;
+    border-radius: 1vw;
+    margin-inline: 5vw;
+    font-size: 2vw;
 }
 
 aside{
