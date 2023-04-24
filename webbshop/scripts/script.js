@@ -72,7 +72,7 @@ function ListItems()
     for (let i = 0; i < basket.length; i++) {
         let li = document.createElement("li");
         li.textContent = basket[i].name + " - " + basket[i].amount + " st" + " á " + basket[i].price + " kr";
-        li.classList.add("basket-item");
+        li.classList.add("varukorg-item");
         ul.appendChild(li);
         subtotalAmount += basket[i].amount * basket[i].price; 
     }
@@ -80,7 +80,7 @@ function ListItems()
 }
 
 function GiveDiscount(){
-    let rabattkod = document.getElementById("rabattkod");
+    let rabattkod = document.getElementById("rabattkod-input");
     let subtotal = document.getElementById("subtotal");
     let realSubtotal = 0;
     if (rabattkod.value == "koffein")

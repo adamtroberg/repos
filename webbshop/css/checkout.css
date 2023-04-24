@@ -9,7 +9,7 @@ header{
     margin: 0;
 }
 
-.basket-item{
+.varukorg-item{
     padding-top: 2vh;
     font-size: 1.75vmax;
 }
@@ -50,13 +50,25 @@ header{
     background-color: yellow;
     padding: 1vh;
     width: 80vw;
+    height: 10vh;
     margin-top: 3vh;
     margin-left: 10vw;
     margin-right: 10vw;
     border: 0.5vh solid rgb(87, 87, 87);
-    font-size: 4vh;
+    font-size: 3vh;
     justify-content: center;
+    align-items: center;
     box-sizing: border-box;
+}
+
+#applicera-rabattkod{
+    min-width: 5vw;
+    font-size: 3vh;
+}
+
+#rabattkod-input{
+    width: 12.5vw;
+    font-size: 3vh;
 }
 
 .rabattkod * {
