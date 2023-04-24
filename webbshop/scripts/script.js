@@ -88,7 +88,11 @@ function GiveDiscount(){
         for (let i = 0; i < basket.length; i++) {
             realSubtotal += basket[i].amount * basket[i].price; 
         }
-        if (subtotalAmount == realSubtotal * 0.5)
+        if (subtotalAmount == 0)
+        {
+            alert("Du har inget i varukorgen!")
+        }
+        else if (subtotalAmount == realSubtotal * 0.5)
         {
            alert("Rabattkod redan använd!")
         }
