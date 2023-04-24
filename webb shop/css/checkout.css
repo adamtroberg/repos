@@ -1,0 +1,74 @@
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #5c5c5c;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    color: white;
+    margin: 0;
+}
+
+.varor{
+    margin-top: 3vh;
+    height: 30vh;
+    background-color: silver;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.varor-rubrik{
+    text-align: center;
+    width: 60vw;
+}
+
+.total{
+    margin-top: 3vh;
+    display: flex;
+    height: 10vh;
+    background-color: silver;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.betala{
+    margin-top: 3vh;
+    background-color: lime;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 10vh;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.fortsätt-handla{
+    margin-top: 3vh;
+    background-color: silver;
+    margin-left: 10vw;
+    margin-right: 10vw; 
+    width: 80vw;
+    height: 10vh;
+    font-size: 5vh;
+    font-style: italic;
+    transition: transform 0.2s ease-in-out;;
+}
+
+.rensa-varukorgen{
+    margin-top: 3vh;
+    background-color: darkred;
+    color: white;
+    margin-left: 10vw;
+    margin-right: 10vw; 
+    width: 80vw;
+    height: 10vh;
+    font-size: 5vh;
+    transition: transform 0.2s ease-in-out;
+}
+
+.fortsätt-handla:hover, .betala:hover, .rensa-varukorgen:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}

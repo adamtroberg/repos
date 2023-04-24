@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbshop</title>
+    <link rel="stylesheet" href="./css/webbshop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Adams Energidrycker & Kosttillskott</h1>
+        <div class="basket">
+            <img src="./img/basket.webp" onclick="GoToBasket()" alt="Basket">
+            <p id="basket-text">0 items</p>
+        </div>
+    </header>
+    <nav>
+        <a href="https://sites.google.com/ga.ntig.se/calle?pli=1&authuser=1">Om Oss</a>
+        <a href="https://www.ups.com/cn/en/Home.page">Frakt & Retur</a>
+        <a href="https://sv.wikipedia.org/wiki/Policy">Policy</a>
+    </nav>
+    <main>
+        <div class="item">
+            <img src="./img/nuclearenergy.webp" alt="Nuclear Energy">
+            <div class="description">
+                <h2>Nuclear Energy</h2>
+                <p>OBS: 600 mg koffein</p>
+                <p>Ger Mycket Energi</p>
+                <p>Pris: 21 kr</p>
+                <div class="köp">
+                    <h4>Köp</h4>
+                    <img src="/img/plus.webp" onclick="AddToBasket(nuclear_energy)" alt="Plus">
+                </div>
+            </div>
+        </div>
+        <div class="item" id="2">
+            <img src="./img/vietenergy.webp" alt="VietEnergy">
+            <div class="description">
+                <h2>Vietnamese Power</h2>
+                <p>OBS: Innehåller laktoyxipentanylon</p>
+                <p>Pris: 21 kr</p>
+                <div class="köp">
+                    <h4>Köp</h4>
+                    <img src="/img/plus.webp" onclick="AddToBasket(vietnamese_power)" alt="Plus">
+                </div>
+            </div>
+        </div>    
+        <div class="item" id="3">
+            <img src="./img/adrenal.webp" alt="Adrenal">
+            <div class="description">
+                <h2>Ultra-Adrenal</h2>
+                <p>Mycket bra</p>
+                <p>Pris: 229 kr</p>
+                <div class="köp">
+                    <h4>Köp</h4>
+                    <img src="/img/plus.webp" onclick="AddToBasket(ultra_adrenal)" alt="Plus">
+                </div>
+            </div>
+        </div>
+        <div class="item" id="4">
+            <img src="./img/caffeine-extreme.webp" alt="Caffeine Extreme">
+            <div class="description">
+                <h2>Extreme Caffeine</h2>
+                <p>Väldigt bra effekt</p>
+                <p>1 kilogram</p>
+                <p>Pris: 829 kr</p>
+                <div class="köp">
+                    <h4>Köp</h4>
+                    <img src="/img/plus.webp" onclick="AddToBasket(extreme_caffeine)" alt="Plus">
+                </div>
+            </div>
+        </div>
+        <div class="item" id="5">
+            <img src="./img/chinese-power.webp" alt="Chinese Power">
+            <div class="description">
+                <h2>Ultra China Drink</h2>
+                <p>Ching Chong Chang</p>
+                <p>Pris: 5 kr</p>
+                <div class="köp">
+                    <h4>Köp</h4>
+                    <img src="/img/plus.webp" onclick="AddToBasket(ultra_china_drink)" alt="Plus">
+                </div>
+            </div>
+        </div>
+        <div class="item" id="6">
+            <img src="./img/russian-bear-5000.webp" alt="Russian Bear 5000">
+            <div class="description">
+                <h2>Russian Bear 5000</h2>
+                <p>AKTA FÖR DEN HÄR!!</p>
+                <p>Pris: 21 kr</p>
+                <div class="köp">
+                    <h4>Köp</h4>
+                    <img src="/img/plus.webp" onclick="AddToBasket(russian_bear_5000)" alt="Plus">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="garanti">
+            <img src="./img/checkmark.webp" alt="Checkmark">
+            <h3>14 dagars öppet köp!</h3>
+        </div>
+        <div class="sociala-medier">
+            <img onclick="window.open('https://twitter.com/fkedland')" src="./img/twitter.webp" alt="Twitter">
+            <img onclick="window.open('https://www.instagram.com/therock')" src="./img/instagram.webp" alt="Instagram">
+            <img onclick="window.open('mailto:keddis@protonmail.com')" src="./img/email.webp" alt="Email">
+        </div>      
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

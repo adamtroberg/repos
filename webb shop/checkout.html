@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./css/checkout.css">
+</head>
+<body>
+    <header>
+        <h1>Varukorg</h1>
+    </header>
+    <article>
+        <div class="varor">
+            <div class="varor-rubrik">
+                <h2>Varor:</h2>
+            </div>
+            <ul>
+                
+            </ul>
+        </div>
+        <div class="total">
+            <h2 id="subtotal">Subtotal: 0 kr</h2>
+        </div>
+    </article>
+    <main>
+        <button class="betala" onclick="Pay()">Betala</button>
+        <button class="fortsätt-handla" onclick="ContinueShopping()">Fortsätt Handla</button>
+        <button class="rensa-varukorgen" onclick="ClearBasket()">Rensa Varukorgen</button>
+    </main>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
