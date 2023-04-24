@@ -142,20 +142,22 @@ footer{
 }
 .garanti > img{
     height: 8vh;
-    width: 12vw;
+    width: 12vh;
     align-self: center;
 }
 
 .sociala-medier {
     display: flex;
     flex-direction: row;
-    width: 5vh;
+    width: 12vh;
     height: 5vh;
     justify-content: flex-end;
 }
 
 .sociala-medier * {
     padding: 0.3vh;
+    height: 5vh;
+    width: 5vh;
 }
 
 .sociala-medier > img:hover{
