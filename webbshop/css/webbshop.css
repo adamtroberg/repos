@@ -90,6 +90,10 @@ img{
     height: 9em;
 }
 
+#6{
+  margin-bottom: 100vh;  
+}
+
 .description{
     padding-left: 1em;
     display: flex;
