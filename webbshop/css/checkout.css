@@ -25,11 +25,13 @@ li{
     margin-right: 20vw;
     padding-bottom: 3vh;
     padding-right: 3vw;
+    padding-left: 2vw;
 }
 
 .varor-rubrik{
     text-align: center;
     width: 60vw;
+    font-size: calc(10px + 1vw);
 }
 
 .total{
