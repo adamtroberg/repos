@@ -9,12 +9,9 @@ header{
     margin: 0;
 }
 
-li{
-    font-size: calc(5px + 1vw);
-}
-
 .basket-item{
     padding-top: 2vh;
+    font-size: 1.5vmax;
 }
 
 .varor{
@@ -31,7 +28,7 @@ li{
 .varor-rubrik{
     text-align: center;
     width: 60vw;
-    font-size: calc(10px + 1vw);
+    font-size: 3vh;
 }
 
 .total{
@@ -43,7 +40,9 @@ li{
     margin-right: 20vw;
     justify-content: center;
     align-items: center;
-    font-size: calc(10px + 1vw);
+    font-size: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .betala{
@@ -63,7 +62,7 @@ li{
     margin-left: 10vw;
     margin-right: 10vw; 
     width: 80vw;
-    height: 10vh;
+    min-height: 10vh;
     font-size: 5vh;
     font-style: italic;
     transition: transform 0.2s ease-in-out;;
