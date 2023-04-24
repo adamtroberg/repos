@@ -139,6 +139,7 @@ footer{
 .garanti{
     display: flex;
     flex-direction: row;
+    align-self: center;
 }
 .garanti > img{
     height: 8vh;
