@@ -68,6 +68,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-bottom: 10vh;
 }
 
 .item{
@@ -88,10 +89,6 @@ img{
 .item > img{
     width: 5em;
     height: 9em;
-}
-
-#6{
-  margin-bottom: 100vh;  
 }
 
 .description{
@@ -143,6 +140,7 @@ footer{
 
 .garanti > h3{
     align-self: center;
+    font-size: 3vw;
 }
 
 .garanti > img{

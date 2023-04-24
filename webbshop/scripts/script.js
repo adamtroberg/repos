@@ -75,18 +75,16 @@ function ListItems()
         subtotalAmount += basket[i].amount * basket[i].price; 
     }
     subtotal.innerHTML = "Subtotal: " + subtotalAmount + " kr";
-    console.log(subtotal.innerHTML);
 }
 
 function ContinueShopping()
 {
     window.location.href = "index.html";
-    console.log(basket);
 }
 
 function Pay()
 {
-    console.log(basket);
+    window.location.href = "https://biluppgifter.se";
 }
 
 function ClearBasket()
