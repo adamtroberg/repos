@@ -79,7 +79,7 @@ function ListItems()
 
 function ContinueShopping()
 {
-    window.location.href = "webbshop.html";
+    window.location.href = "index.html";
     console.log(basket);
 }
 
