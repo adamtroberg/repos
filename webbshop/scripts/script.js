@@ -1,5 +1,7 @@
 let basket = [];
 let totalItems = 0;
+let subtotalAmount = 0;
+
 getBasket();
 
 class ShopItems
@@ -64,8 +66,8 @@ function GoToBasket()
 function ListItems()
 {
     let subtotal = document.getElementById("subtotal");
-    let subtotalAmount = 0;
     let ul = document.querySelector("ul");
+    subtotalAmount = 0;
     ul.innerHTML = "";
     for (let i = 0; i < basket.length; i++) {
         let li = document.createElement("li");
@@ -75,6 +77,32 @@ function ListItems()
         subtotalAmount += basket[i].amount * basket[i].price; 
     }
     subtotal.innerHTML = "Subtotal: " + subtotalAmount + " kr";
+}
+
+function GiveDiscount(){
+    let rabattkod = document.getElementById("rabattkod");
+    let subtotal = document.getElementById("subtotal");
+    let realSubtotal = 0;
+    if (rabattkod.value == "koffein")
+    {
+        for (let i = 0; i < basket.length; i++) {
+            realSubtotal += basket[i].amount * basket[i].price; 
+        }
+        if (subtotalAmount == realSubtotal * 0.5)
+        {
+           alert("Rabattkod redan använd!")
+        }
+        else
+        {
+            subtotalAmount = subtotalAmount * 0.5;
+            subtotal.innerHTML = "Subtotal: " + subtotalAmount + " kr";
+            alert("Godkänd rabattkod. 50% rabatt införd.")
+        }
+    }
+    else
+    {
+        alert("Felaktig rabattkod!");
+    }
 }
 
 function ContinueShopping()

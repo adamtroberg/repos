@@ -44,6 +44,25 @@ header{
     padding: 1vh;
 }
 
+.rabattkod{
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+    padding: 1vh;
+    width: 80vw;
+    margin-top: 3vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border: 0.5vh solid rgb(87, 87, 87);
+    font-size: 4vh;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.rabattkod * {
+    margin-left: 2vh;
+}
+
 .betala{
     margin-top: 3vh;
     background-color: lime;
@@ -53,6 +72,7 @@ header{
     height: 10vh;
     font-size: 5vh;
     font-weight: bold;
+    border: 0.5vh solid rgb(87, 87, 87);
 }
 
 .fortsätt-handla{
@@ -64,7 +84,8 @@ header{
     min-height: 10vh;
     font-size: 5vh;
     font-style: italic;
-    transition: transform 0.2s ease-in-out;;
+    transition: transform 0.2s ease-in-out;
+    border: 0.5vh solid rgb(87, 87, 87);
 }
 
 .rensa-varukorgen{
@@ -77,6 +98,7 @@ header{
     min-height: 10vh;
     font-size: 5vh;
     transition: transform 0.2s ease-in-out;
+    border: 0.5vh solid rgb(87, 87, 87);
 }
 
 .fortsätt-handla:hover, .betala:hover, .rensa-varukorgen:hover{
