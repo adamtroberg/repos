@@ -10,15 +10,20 @@ header{
 }
 
 li{
-    font-size: 1.5vw;
+    font-size: calc(10px + 1vw);
+}
+
+.basket-item{
+    padding-top: 2vh;
 }
 
 .varor{
     margin-top: 3vh;
-    height: 30vh;
+    min-height: 30vh;
     background-color: silver;
     margin-left: 20vw;
     margin-right: 20vw;
+    padding-bottom: 3vh;
 }
 
 .varor-rubrik{
@@ -35,6 +40,7 @@ li{
     margin-right: 20vw;
     justify-content: center;
     align-items: center;
+    font-size: calc(10px + 1vw);
 }
 
 .betala{

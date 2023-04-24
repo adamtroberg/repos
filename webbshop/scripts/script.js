@@ -70,6 +70,7 @@ function ListItems()
     for (let i = 0; i < basket.length; i++) {
         let li = document.createElement("li");
         li.textContent = basket[i].name + " - " + basket[i].amount + " st" + " á " + basket[i].price + " kr";
+        li.classList.add("basket-item");
         ul.appendChild(li);
         subtotalAmount += basket[i].amount * basket[i].price; 
     }
