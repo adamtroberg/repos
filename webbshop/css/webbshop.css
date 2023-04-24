@@ -67,7 +67,7 @@ nav > a:hover{
 main{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 10vh;
 }
 
