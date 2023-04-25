@@ -64,7 +64,7 @@ header{
 #applicera-rabattkod{
     min-width: 5vw;
     font-size: 2vmax;
-    height: 4vh;
+    min-height: 4vh;
 }
 
 #rabattkod-input{
