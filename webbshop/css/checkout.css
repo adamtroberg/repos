@@ -14,6 +14,14 @@ header{
     font-size: 1.75vmax;
 }
 
+.rabattkod-text{
+    padding-top: 4vh;
+    font-size: 1.75vmax;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .varor{
     margin-top: 3vh;
     min-height: 30vh;
@@ -27,8 +35,9 @@ header{
 
 .varor-rubrik{
     text-align: center;
-    width: 60vw;
+    max-width: 60vw;
     font-size: 3vh;
+    padding-left: 1vw;
 }
 
 .total{

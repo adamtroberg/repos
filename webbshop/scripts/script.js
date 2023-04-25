@@ -103,6 +103,7 @@ function GiveDiscount()
     let rabattkod = document.getElementById("rabattkod-input");
     let subtotal = document.getElementById("subtotal");
     let realSubtotal = 0;
+    let ul = document.querySelector("ul");
     // Kolla att rabattkoden är giltig.
     if (rabattkod.value == "koffein")
     {
@@ -125,6 +126,10 @@ function GiveDiscount()
         {
             subtotalAmount = subtotalAmount * 0.5;
             subtotal.innerHTML = "Subtotal: " + subtotalAmount + " kr";
+            let li = document.createElement("li");
+            li.textContent = "50% rabatt!"
+            li.classList.add("rabattkod-text");
+            ul.appendChild(li);
             alert("Godkänd rabattkod. 50% rabatt införd.")
         }
     }
